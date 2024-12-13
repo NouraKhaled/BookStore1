@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshop Website</title>
+    
+    <link rel="stylesheet" href="style/style.css">
+    
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+    <div class="header-1">
+
+            <input type="search" name="" placeholder="search here...." id="search-box">   
+
+    </div>
+    
+    <header>
+        <div class="container">
+            <h1>Welcome to Our Bookshop</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#" id="registerBtn">Register</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#" id="open-favorites-btn" class="favorite-btn" >Favorites </a></li>
+
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section id="home" class="container">
+        <h2>Explore the World of Books</h2>
+        <p>Welcome to our online bookshop!<br> Discover your next great read, whether it's a classic novel, a thrilling adventure, or an insightful non-fiction book.</p>
+        <img src="img/bookshop.png" alt="Bookshelf" class="home-image">
+    </section>
+
+
+    <!-- Products Section -->
+    <section id="products" class="container">
+        <h2>Our Products and Their Characteristics</h2>
+        <div class="product-list">
+            <!-- Book 1 -->
+            <div class="product">
+                <img src="img/great-gatsby.jpeg" alt="The Great Gatsby">
+                <h3>The Great Gatsby</h3>
+                <p><strong>Author:</strong> F. Scott Fitzgerald</p>
+                <p><strong>Genre:</strong> Fiction, Classic</p>
+                <p><strong>Description:</strong> A novel of the Jazz Age that explores themes of decadence, idealism, and excess.</p>
+                <button class="favorite-btn" onclick="addToFavorites('The Great Gatsby', 'img/great-gatsby.jpeg')">Add to Favorites</button>
+    
+            </div>
+
+            <!-- Book 2 -->
+            <div class="product">
+                <img src="img/george-orwell.jpeg" alt="1984">
+                <h3>1984</h3>
+                <p><strong>Author:</strong> George Orwell</p>
+                <p><strong>Genre:</strong> Dystopian, Science Fiction</p>
+                <p><strong>Description:</strong> A chilling depiction of a totalitarian regime and the dangers of political oppression.</p>
+                <button class="favorite-btn" onclick="addToFavorites('1984',  'img/george-orwell.jpeg')">Add to Favorites</button>
+               
+            </div>
+
+            <!-- Book 3 -->
+            <div class="product">
+                <img src="img/to-kill-a-mockingbird.jpeg" alt="To Kill a Mockingbird">
+                <h3>To Kill a Mockingbird</h3>
+                <p><strong>Author:</strong> Harper Lee</p>
+                <p><strong>Genre:</strong> Fiction, Classic</p>
+                <p><strong>Description:</strong> A story of racial injustice in the deep South, seen through the eyes of a young girl.</p>
+               <button class="favorite-btn" onclick="addToFavorites('To Kill a Mockingbird', 'img/to-kill-a-mockingbird.jpeg')">Add to Favorites</button>
+    
+            </div>
+
+            <!-- Book 4 -->
+            <div class="product">
+                <img src="img/harry-potter.jpeg" alt="Harry Potter Series">
+                <h3>Harry Potter Series</h3>
+                <p><strong>Author:</strong> J.K. Rowling</p>
+                <p><strong>Genre:</strong> Fantasy, Adventure</p>
+                <p><strong>Description:</strong> Follow the journey of a young wizard and his friends as they battle dark forces in the magical world.</p>
+                <button class="favorite-btn" onclick="addToFavorites('Harry Potter Series', 'img/harry-potter.jpeg')">Add to Favorites</button>
+                  
+            </div>
+
+            <!-- Book 5 -->
+            <div class="product">
+                <img src="img/the_lord_of_the_rings.jpeg" alt="The Lord of the Rings">
+                <h3>The Lord of the Rings</h3>
+                <p><strong>Author:</strong> J.R.R. Tolkien</p>
+                <p><strong>Genre:</strong> Fantasy, Epic</p>
+                <p><strong>Description:</strong> An epic high-fantasy novel that follows the quest to destroy a powerful ring and defeat the Dark Lord Sauron.</p>
+                <button class="favorite-btn" onclick="addToFavorites('The Lord of the Rings','img/the_lord_of_the_rings.jpeg')">Add to Favorites</button>
+                   
+
+
+            </div>
+
+            <!-- Book 6 -->
+            <div class="product">
+                <img src="img/pride-and-prejudice.jpeg" alt="Pride and Prejudice">
+                <h3>Pride and Prejudice</h3>
+                <p><strong>Author:</strong> Jane Austen</p>
+                <p><strong>Genre:</strong> Romance, Classic</p>
+                <p><strong>Description:</strong> A romantic novel of manners that explores issues of marriage, wealth, and social class in early 19th-century England.</p>
+                <button class="favorite-btn" onclick="addToFavorites('Pride and Prejudice','img/pride-and-prejudice.jpeg')">Add to Favorites</button>
+   
+
+            </div>
+
+            <!-- Book 7 -->
+            <div class="product">
+                <img src="img/moby-dick.jpg" alt="Moby Dick">
+                <h3>Moby Dick</h3>
+                <p><strong>Author:</strong> Herman Melville</p>
+                <p><strong>Genre:</strong> Adventure, Classic</p>
+                <p><strong>Description:</strong> The narrative of Captain Ahab's obsessive quest to hunt down the white whale, Moby Dick.</p>
+                 <button class="favorite-btn" onclick="addToFavorites('Moby Dick', 'img/moby-dick.jpg')">Add to Favorites</button>
+                
+
+            </div>
+
+            <!-- Book 8 -->
+            <div class="product">
+                <img src="img/war-and-peace.jpeg" alt="War and Peace">
+                <h3>War and Peace</h3>
+                <p><strong>Author:</strong> Leo Tolstoy</p>
+                <p><strong>Genre:</strong> Historical Fiction</p>
+                <p><strong>Description:</strong> A sweeping tale of love and war set during the Napoleonic Wars in Russia.</p>
+                <button class="favorite-btn" onclick="addToFavorites('War and Peace','img/war-and-peace.jpeg')">Add to Favorites</button>
+
+            </div>
+
+            <!-- Book 9 -->
+            <div class="product">
+                <img src="img/animal-farm.jpeg" alt="Animal Farm">
+                <h3>Animal Farm</h3>
+                <p><strong>Author:</strong> George Orwell</p>
+                <p><strong>Genre:</strong> Political Satire</p>
+                <p><strong>Description:</strong> A satirical allegory of the Russian Revolution and the rise of Stalinism, set on a farm where the animals take over.</p>
+                <button class="favorite-btn" onclick="addToFavorites('Animal Farm','img/animal-farm.jpeg')">Add to Favorites</button>
+
+            </div>
+
+            <!-- Book 10 -->
+            <div class="product">
+                <img src="img/catcher-in-the-rye.jpeg" alt="The Catcher in the Rye">
+                <h3>The Catcher in the Rye</h3>
+                <p><strong>Author:</strong> J.D. Salinger</p>
+                <p><strong>Genre:</strong> Fiction, Coming-of-Age</p>
+                <p><strong>Description:</strong> The story of Holden Caulfield, a teenage rebel searching for truth and questioning the adult world.</p>
+                <button class="favorite-btn" onclick="addToFavorites('The Catcher in the Rye', 'img/catcher-in-the-rye.jpeg')">Add to Favorites</button>
+
+            </div>
+
+            <!-- Book 11 -->
+            <div class="product">
+                <img src="img/the-hobbit.jpeg" alt="The Hobbit">
+                <h3>The Hobbit</h3>
+                <p><strong>Author:</strong> J.R.R. Tolkien</p>
+                <p><strong>Genre:</strong> Fantasy, Adventure</p>
+                <p><strong>Description:</strong> The tale of Bilbo Baggins' unexpected journey to recover a treasure from the dragon Smaug.</p>
+                <button class="favorite-btn" onclick="addToFavorites('The Hobbit', 'img/the-hobbit.jpeg')"> Add to Favorites</button>
+
+            </div>
+
+            <!-- Book 12 -->
+            <div class="product">
+                <img src="img/crime-and-punshment.jpeg" alt="Crime and Punishment">
+                <h3>Crime and Punishment</h3>
+                <p><strong>Author:</strong> Fyodor Dostoevsky</p>
+                <p><strong>Genre:</strong> Psychological Fiction</p>
+                <p><strong>Description:</strong> A psychological study of a young man who commits a crime and grapples with guilt, morality, and justice.</p>
+                <button class="favorite-btn" onclick="addToFavorites('Crime and Punishment', 'img/crime-and-punshment.jpeg')">Add to Favorites</button>
+
+            </div>
+
+            <!-- Book 13 -->
+            <div class="product">
+                <img src="img/the-divine-comedy.jpeg" alt="The Divine Comedy">
+                <h3>The Divine Comedy</h3>
+                <p><strong>Author:</strong> Dante Alighieri</p>
+                <p><strong>Genre:</strong> Epic Poetry</p>
+                <p><strong>Description:</strong> An epic poem that takes the reader on a journey through Hell, Purgatory, and Heaven.</p>
+                <button class="favorite-btn" onclick="addToFavorites('The Divine Comedy','img/the-divine-comedy.jpeg')">Add to Favorites</button>
+
+            </div>
+
+            <!-- Book 14 -->
+            <div class="product">
+                <img src="img/ulysses.jpeg" alt="Ulysses">
+                <h3>Ulysses</h3>
+                <p><strong>Author:</strong> James Joyce</p>
+                <p><strong>Genre:</strong> Modernist Literature</p>
+                <p><strong>Description:</strong> A groundbreaking stream-of-consciousness novel that parallels the structure of Homer's Odyssey.</p>
+                <button class="favorite-btn" onclick="addToFavorites('Ulysses',  'img/ulysses.jpeg')">Add to Favorites</button>
+
+            </div>
+
+            <!-- Book 15 -->
+            <div class="product">
+                <img src="img/the-alchemist.jpeg" alt="The Alchemist">
+                <h3>The Alchemist</h3>
+                <p><strong>Author:</strong> Paulo Coelho</p>
+                <p><strong>Genre:</strong> Adventure, Fantasy</p>
+                <p><strong>Description:</strong> A philosophical novel about a young shepherd's journey in search of his personal legend and spiritual fulfillment.</p>
+                <button class="favorite-btn" onclick="addToFavorites('The Alchemist','img/the-alchemist.jpeg')">Add to Favorites</button>
+
+            </div>
+
+       
+        </div>
+            
+    </section>
+    
+    
+    <section class="register" id="registerModal">
+        <div class="register-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <form action= "project1/PHP/Book.php" method="POST">
+            <h2>Register</h2>
+            Username*<input type="text" id="username" name="username"  required>
+            Email<input type="text" id="email" name="email">
+            Password*<input type="password" id="password" name="password" required>
+            <button type="submit" name="submit">Register</button>
+            </form>
+            <p id="validation" ></p>
+        </div>
+     </section>
+    
+
+    
+   
+
+    
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email1" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit">
+        </form>
+    </section>
+    
+     <!-- Favorites Section -->
+  <div id="favorites-modal" class="favorites">
+  <div class="favorites-content">
+    <span id="close-favorites" class="close">&times;</span>
+    <h2>Favorites</h2>
+    <div id="favorites-container"></div>
+  </div>
+</div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bookshop Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
